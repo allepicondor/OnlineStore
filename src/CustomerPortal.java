@@ -237,7 +237,7 @@ public class CustomerPortal {
         String addr = sc.nextLine();
         String dob ="";
         while(true) {
-            System.out.print("Enter date of birth (yyyy\\mm\\dd): ");
+            System.out.print("Enter date of birth (yyyy-mm-dd): ");
             dob = sc.nextLine();
             if(true)
                 break;

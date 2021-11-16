@@ -19,19 +19,19 @@ public class OnlineStore {
 
             if(n == 1 ){
 
-                System.out.println("Item name:");
+                System.out.print("Item name(String):");
                 String name = sc.nextLine();
-                System.out.println("Item height:");
+                System.out.print("Item height(Double):");
                 double height = sc.nextDouble();sc.nextLine();
-                System.out.println("Item width:");
+                System.out.print("Item width(Double):");
                 double width = sc.nextDouble();
-                System.out.println("Item length:");
+                System.out.print("Item length(Double):");
                 double length = sc.nextDouble();
-                System.out.println("Item price:");
+                System.out.print("Item price(Double):");
                 double price = sc.nextDouble();sc.nextLine();
-                System.out.println("SKU:");
+                System.out.print("SKU(Int):");
                 int sku = sc.nextInt();sc.nextLine();
-                System.out.println("QTY:");
+                System.out.print("QTY(Int):");
                 int qty = sc.nextInt();sc.nextLine();
                 try{
                     stmt.execute("INSERT INTO Inventory VALUES ("+sku+","+qty+",\""+name+"\","+height+","+length+","
