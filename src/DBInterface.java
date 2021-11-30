@@ -1,7 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class DBInterface {
 
@@ -13,7 +10,8 @@ public class DBInterface {
         try {
             con = DriverManager.getConnection("jdbc:sqlite:database.db");
             stmt = con.createStatement();
-        } catch (SQLException e) {
+        } catch (SQLException e){
+            System.err.println(e);
             System.err.println("Problem connecting to database");
         }
         createTables();

@@ -1,8 +1,14 @@
 public class Item  {
 
     private static int itemCount = 0;
-    private int sku;
     private String name;
+    private int sku;
+
+    public int getQty() {
+        return qty;
+    }
+
+    private int qty;
     private double width;
     private double height;
     private double length;
@@ -10,18 +16,17 @@ public class Item  {
 
 
 
-    public Item(String name, double height, double length, double width){
-        itemCount++;
-        sku = itemCount;
+    public Item(int sku,int qty, String name, double height, double length, double width){
+        this.sku = sku;
+        this.qty = qty;
         this.name = name;
         this.height = height;
         this.width = width;
         this.length = length;
-        price = -1;
     }
-    public Item(String name, double height, double length, double width, double price){
-        itemCount++;
-        sku = itemCount;
+    public Item(int sku,int qty, String name, double height, double length, double width, double price){
+        this.sku = sku;
+        this.qty = qty;
         this.name = name;
         this.height = height;
         this.width = width;
